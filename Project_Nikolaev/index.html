@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Landing Page of Monticello company">
@@ -9,14 +10,15 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fonts/fontawesome-free-5.10.2-web/css/all.min.css">
   <!-- <link rel="shortcut icon" href="http://..." type="image/x-icon"> -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Monticello</title>
 </head>
 
 <body>
   <header>
     <div class="wrapper">
-      <div class="header__wrapper">
+      <div class="header__main">
+        <div class="header__wrapper">
         <div class="header__logo">
           <a href="#" class="header__logo-link">
             <img src="./images/logo.svg" alt="Monticello logo" class="header__logo-pic">
@@ -25,22 +27,22 @@
         <nav class="header__nav">
           <ul class="header__nav__menu">
             <li class="header__nav__menu-item">
-              <a href="#" class="header__nav__menu-link">
+              <a href="#aboutUs" class="header__nav__menu-link">
                 <span class="header__nav__menu-item-circle active"></span>About Us
               </a>
             </li>
             <li class="header__nav__menu-item">
-              <a href="#" class="header__nav__menu-link">
+              <a href="#gallery" class="header__nav__menu-link">
                 <span class="header__nav__menu-item-circle"></span>Projects
               </a>
             </li>
             <li class="header__nav__menu-item">
-              <a href="#" class="header__nav__menu-link">
+              <a href="#latestNews" class="header__nav__menu-link">
                 <span class="header__nav__menu-item-circle"></span>News
               </a>
             </li>
             <li class="header__nav__menu-item">
-              <a href="#" class="header__nav__menu-link">
+              <a href="#contacts-block" class="header__nav__menu-link">
                 <span class="header__nav__menu-item-circle"></span>Contact
               </a>
             </li>
@@ -64,6 +66,7 @@
           </li>
         </ul>
       </div>
+      </div>
       <div class="header__slider">
         <div class="header__slider__title">SIMPLE & MORDERN</div>
         <p>We make the world's beautiful every day</p>
@@ -82,7 +85,7 @@
       </div>
     </div>
   </header>
-  <section class="aboutUs">
+  <section id="aboutUs" class="aboutUs">
     <div class="wrapper">
       <h2 class="aboutUs-title">What we do</h2>
       <div class="aboutUs__card aboutUs__card-left">
@@ -110,14 +113,17 @@
       </div>
     </div>
   </section>
-  <section class="latestNews">
+  <section id="latestNews" class="latestNews">
   </section>
-  <section class="gallery">
+  <section id="gallery" class="gallery">
     <div class="wrapper">
       <div class='gallery-line'></div>
       <div class="gallery-title">Gallery</div>
       <div class="gallery-pictures">
-        <img src="images/Gallery/scott-webb-176434.jpg" alt="Project build" class="gallery-pictures-item gallery-pictures-item-1">
+        <div class="gallery-pictures-item gallery-pictures-item-1">
+          <img src="images/Gallery/scott-webb-176434.jpg" alt="Project build">
+          <img src="images/Gallery/360.png" alt="World 360" class="gallery-pictures-360">
+        </div>
         <img src="images/Gallery/photos-13323p6Bdc0uhr8Bq.jpg" alt="Project build" class="gallery-pictures-item gallery-pictures-item-2">
         <img src="images/Gallery/echo-grid-156713.jpg" alt="Project build" class="gallery-pictures-item gallery-pictures-item-3">
         <img src="images/Gallery/fuse-brussels-169216.jpg" alt="Project build" class="gallery-pictures-item gallery-pictures-item-4">
@@ -128,25 +134,56 @@
   </section>
   <section class="contacts">
     <div class="contacts-location"></div>
-    <div class="contacts-block">
-        <div class="contacts-block-title">Get in touch</div>
-        <div class="contacts-block-info">
-          <div class="contacts-block-info-company">
-            <p><i class="fas fa-map-marker-alt"></i>91 Nolan Extensions Suite 670</p>
-            <p><i class="fas fa-phone-alt"></i>+001 356-868-2454</p>
-            <p><i class="fas fa-inbox"></i>gahuy93@gmail.com</p>
-            <p><i class="far fa-clock"></i>From 07:05AM to 19:30PM</p>
-          </div>
-          <div class="contacts-block-info-aboutMe">
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="email" name="email" placeholder="Email" disabled>
-            <button type="button" name="aboutMe" class="aboutMe">Submit</button>
-          </div>
+    <div id="contacts-block" class="contacts-block">
+      <div class="contacts-block-title">Get in touch</div>
+      <div class="contacts-block-info">
+        <div class="contacts-block-info-company">
+          <p><i class="fas fa-map-marker-alt"></i>91 Nolan Extensions Suite 670</p>
+          <p><i class="fas fa-phone-alt"></i>+001 356-868-2454</p>
+          <p><i class="fas fa-inbox"></i>gahuy93@gmail.com</p>
+          <p><i class="far fa-clock"></i>From 07:05AM to 19:30PM</p>
         </div>
+        <div class="contacts-block-info-aboutMe">
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="email" name="email" placeholder="Email">
+          <button type="button" name="aboutMe" class="aboutMe">Submit</button>
+        </div>
+      </div>
     </div>
   </section>
-  <footer></footer>
-  <!-- <script src="http://..."> </script> -->
+  <footer>
+    <div class="footer__wrapper">
+      <div class="footer_main">
+        <div class="footer__logo">
+          <a href="#" class="footer__logo-link">
+            <img src="./images/logo.svg" alt="Monticello logo" class="footer__logo-pic">
+          </a>
+        </div>
+        <ul class="header__social__menu">
+          <li class="header__social__menu-item">
+            <a href="#" class="header__social__menu-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="header__social__menu-item">
+            <a href="#" class="header__social__menu-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="header__social__menu-item">
+            <a href="#" class="header__social__menu-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_copyrights">
+        <p>Copyrights <i class="far fa-copyright"></i> 2017 Monticello Group</p>
+        <p>Made with <i class="fas fa-heart"></i> by Ga Huy</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"> </script>
 </body>
 
 </html>
