@@ -21,8 +21,8 @@ $(document).ready(() => {
       const scrollTop_startBlock = $(value).offset().top - nav_height;
       const scrollTop_endBlock = $(value).offset().top + $(value)[0].clientHeight - nav_height;
 
-      if (scrollTop_startBlock <= $('html, body').scrollTop() &&
-        scrollTop_endBlock >= $('html, body').scrollTop()) {
+      if (scrollTop_startBlock - 1 <= $('html, body').scrollTop() &&
+        scrollTop_endBlock - 1 >= $('html, body').scrollTop()) {
         checkActiveState(value);
       }
     });
