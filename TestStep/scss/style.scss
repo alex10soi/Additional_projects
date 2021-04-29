@@ -5,12 +5,10 @@
     src: url(/fonts/ofont.ru_SF_UI_Display.ttf);
 }
 
-
 @font-face {
     font-family: 'SF UI Display Thin';
     src: url(/fonts/sf-ui-display-thin-58646e9b26e8b.otf);
 }
-
 
 :root {
     --header-lang: rgba(193, 193, 193, 1);
@@ -39,7 +37,6 @@
     line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 50px;
-
     font: {
         weight: bold;
         size: 36px;
@@ -66,15 +63,12 @@
     -moz-transition: all .2s linear;
     -ms-transition: all .2s linear;
     -o-transition: all .2s linear;
-
     font: {
         weight: 700;
         size: 18px;
     }
-
     cursor: pointer;
     border-radius: 6px;
-
     &:hover {
         background-color: rgba(5, 94, 169, 1);
         color: white;
@@ -83,30 +77,22 @@
 
 html,
 body {
-    // height: 100%;
-    // max-height: 100%;
     max-width: 2000px;
     width: 100%;
     @extend %text-font;
     box-sizing: border-box;
     overflow-x: hidden;
-
     font: {
         size: 18px;
         font-weight: 400;
     }
 }
 
-body {
-    // box-sizing: border-box;
-    // overflow: hidden;
-}
-
 header {
     position: relative;
     box-sizing: border-box;
 
-    &>.header-abstarct-1 {
+    & > .header-abstarct-1 {
         width: 100%;
         max-width: 391px;
         @extend %abstarct-image;
@@ -114,7 +100,7 @@ header {
         left: 0;
     }
 
-    &>.header-abstarct-2 {
+    & > .header-abstarct-2 {
         width: 100%;
         max-width: 391px;
         @extend %abstarct-image;
@@ -128,31 +114,26 @@ header {
     width: 100%;
     margin: 0 auto;
 
-    &>h1 {
+    & > h1 {
         @extend %text-font;
         text-transform: uppercase;
         line-height: 60px;
-
         font: {
             weight: bold;
             size: 50px;
         }
-
-        // font-weight: bold;
         color: white;
     }
 
-    &>h2 {
+    & > h2 {
         @extend %text-font;
         text-transform: uppercase;
         line-height: 60px;
         margin-bottom: 21px;
-
         font: {
             family: 'SF UI Display Thin', Arial, sans-serif;
             size: 50px;
         }
-
         color: white;
     }
 }
@@ -167,7 +148,7 @@ header {
     display: flex;
     align-items: center;
 
-    &>.header-contact-brand {
+    & > .header-contact-brand {
         width: 100%;
         max-width: 68px;
         flex: 1 0 auto;
@@ -177,7 +158,7 @@ header {
         margin-bottom: 14px;
     }
 
-    &>.header-contact-lang {
+    & > .header-contact-lang {
         flex: 7 4 auto;
         height: 100%;
         display: flex;
@@ -185,63 +166,60 @@ header {
         align-items: flex-end;
         justify-content: flex-end;
 
-        &>.header-contact-lang-tel {
+        & > .header-contact-lang-tel {
             font: {
                 family: 'SF UI Display', Arial, sans-serif;
                 size: 25px;
             }
         }
 
-        &>.header-contact-lang-block {
+        & > .header-contact-lang-block {
             width: 100%;
             max-width: 465px;
             display: flex;
             justify-content: flex-end;
             color: var(--header-lang);
-
             font: {
                 family: 'SF UI Display', Arial, sans-serif;
                 size: 15px;
             }
-
             margin-top: 11px;
 
-            &>.header-contact-lang-item {
+            & > .header-contact-lang-item {
                 margin-right: 13px;
                 cursor: pointer;
             }
 
-            &>.header-contact-lang-item.active {
+            & > .header-contact-lang-item.active {
                 border-bottom: 3px solid #27C5DC;
                 width: 22px;
                 padding-bottom: 8px;
             }
 
-            &>.header-contact-lang-item:last-child {
+            & > .header-contact-lang-item:last-child {
                 margin-right: 0;
             }
         }
     }
 
-    &>.header-contact-consult {
+    & > .header-contact-consult {
         flex: 1 1 auto;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         height: 100%;
         position: relative;
-
         font: {
             family: 'SF UI Display', Arial, sans-serif;
             size: 15px;
         }
 
-        &>img {
+        & > img {
             width: 100%;
             max-width: 200px;
         }
 
-        &>.header-contact-consult-text>a {
+        & > .header-contact-consult-text>a {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -256,10 +234,9 @@ header {
             -o-transform: translate(20%, 10%);
             color: white;
             text-decoration: none;
-
         }
 
-        &>.header-contact-consult-text:hover {
+        & > .header-contact-consult-text:hover {
             color: var(--header-lang);
         }
     }
@@ -271,7 +248,6 @@ header {
     height: 40px;
     display: flex;
     justify-content: flex-start;
-
 }
 
 .header-nav-wrapper {
@@ -279,37 +255,37 @@ header {
     display: flex;
     height: 100%;
 
-    &>nav {
+    & > nav {
         height: 100%;
-        margin-right: 144px;
+        margin-right: 9rem;
     }
 
-    &>.header-nav-add {
+    & > .header-nav-add {
         display: flex;
         align-items: center;
         color: white;
         @extend %text-font;
 
-        &>div {
+        & > div {
             height: 100%;
             display: flex;
             align-items: center;
         }
 
-        &>.header-nav-add-city {
+        & > .header-nav-add-city {
             color: white;
             background-color: #2B2B2B;
             padding: 0 15px;
             margin-right: 31px;
             cursor: pointer;
 
-            &>i {
+            & > i {
                 color: #27C5DC;
                 margin-left: 12px;
             }
         }
 
-        &>.header-nav-add-pay>a {
+        & > .header-nav-add-pay>a {
             text-decoration: none;
             color: white;
             height: 100%;
@@ -323,13 +299,13 @@ header {
     display: flex;
     height: 100%;
 
-    &>li {
+    & > li {
         margin-right: 18px;
         display: flex;
         align-items: center;
         @extend %text-font;
 
-        &>a {
+        & > a {
             text-decoration: none;
             color: white;
             height: 100%;
@@ -343,7 +319,7 @@ header {
     height: 635px;
     background: url('/images/header_contact/Rectangle_133.jpg') center no-repeat;
     background-size: cover;
-    padding-top: 91px;
+    padding: 91px 30px 30px;
 }
 
 main {
@@ -376,30 +352,6 @@ main {
         z-index: -1;
         transform: rotate(-5deg);
     }
-
-    // &::before {
-    //     display: block;
-    //     content: '';
-    //     background: url('/images/section_suggest/poly1_1.png') 0% 0% no-repeat;
-    //     position: absolute;
-    //     top: -10%;
-    //     left: -2%;
-    //     width: 1143px;
-    //     height: 979px;
-    //     z-index: -1;
-    // }
-
-    // &::after {
-    //     display: block;
-    //     content: '';
-    //     background: url('/images/section_suggest/poly1_1_2.png') 100% 0% no-repeat;
-    //     position: absolute;
-    //     top: -13%;
-    //     right: -2%;
-    //     width: 1511px;
-    //     height: 1294px;
-    //     z-index: -1;
-    // }
 }
 
 .header-wrapper>p.header-main-info-text {
@@ -411,7 +363,6 @@ main {
     padding-left: 30px;
     border-left: 3px solid #27C5DC;
     margin-bottom: 20px;
-
     font: {
         family: 'SF UI Display Thin', sans-serif;
         weight: 400;
@@ -423,14 +374,12 @@ main {
     display: flex;
     align-items: center;
     color: white;
-
     font: {
         family: 'SF UI Display Thin', Arial, sans-serif;
         size: 18px;
     }
 
-
-    &>.age-block {
+    & > .age-block {
         width: 40px;
         height: 40px;
         background-color: #2CC6D9;
@@ -441,9 +390,8 @@ main {
         margin-right: 20px;
     }
 
-    &>.age {
+    & > .age {
         width: 26.97px;
-
     }
 }
 
@@ -457,22 +405,19 @@ main {
     @extend %display-flex;
     flex-direction: column;
     padding-top: 140px;
-    z-index: 2;   // удалить 
 
-    &>.sign-up-text {
+    & > .sign-up-text {
         max-width: 847px;
         text-align: center;
         margin-bottom: 35px;
         @extend %text-font;
-
         font: {
             weight: 400;
             size: 18px;
         }
-
     }
 
-    &>.sign-up-btn {
+    & > .sign-up-btn {
         @extend %button-style;
     }
 }
@@ -482,34 +427,33 @@ main {
     max-width: 1440px;
     margin-top: 141px;
     margin-bottom: 152px;
-    z-index: 2;
 
-
-    &>.suggest-title {
+    & > .suggest-title {
         @extend %section-title;
+        padding: 0 30px;
     }
 
-    &>.suggest-block {
+    & > .suggest-block {
         @extend %display-flex;
+        align-items: flex-start;
+        flex-direction: row;
+        padding: 0 30px;
 
-        &>div {
+        & > div {
             margin-right: 20px;
-            // @extend %display-flex;
-            // flex-direction: column;
             text-align: center;
 
-            &>img {
+            & > img {
                 width: 100%;
                 max-width: 466px;
                 height: auto;
             }
         }
 
-        &>div:last-child {
+        & > div:last-child {
             margin-right: 0;
             width: 466px;
         }
-
     }
 }
 
@@ -520,22 +464,27 @@ main {
 }
 
 .program {
+    padding: 0 30px;
+    box-sizing: border-box;
 
-    &>.program-title {
+    & > .program-title {
         @extend %section-title;
     }
 
-    &>.program-cards {
+    & > .program-cards {
         width: 100%;
+        max-width: 1440px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
 
-        &>.program-card {
-            float: left;
-            margin: 0 20px 20px 0;
+        & > .program-card {
             width: 100%;
             max-width: 710px;
             position: relative;
 
-            &>.program-card-age {
+            & > .program-card-age {
                 width: 100%;
                 max-width: 146px;
                 height: 100%;
@@ -544,26 +493,22 @@ main {
                 border-radius: 10px 0px 0px 10px;
                 @extend %display-flex;
                 @extend %text-font;
-
                 font: {
                     weight: 700;
                     size: 18px;
                 }
-
                 position: absolute;
                 top: 40px;
                 right: 0;
             }
 
-            &>img {
+            & > img {
                 width: 100%;
                 max-width: 710px;
             }
-
-            // margin-right: 20px;
         }
 
-        &>.program-card:nth-child(2n) {
+        & > .program-card:nth-child(2n) {
             margin-right: 0;
         }
     }
@@ -572,17 +517,14 @@ main {
 
 .program-card-subtitle {
     display: flex;
-    // border: 2px solid #FFFFFF;
     box-sizing: border-box;
     overflow: hidden;
     height: 100%;
     max-height: 77px;
     margin-top: -4px;
     border-radius: 0 0 30px 30px;
-    // padding: 28px 0 37.31px;
 
-
-    &>.program-card-text {
+    & > .program-card-text {
         margin: 0;
         text-transform: uppercase;
         height: 100%;
@@ -590,28 +532,36 @@ main {
         @extend %text-font;
         @extend %display-flex;
         flex: 2 1 auto;
-        padding: 28px 0 37.31px;
         background-color: #F2F6F9;
-
         font: {
             size: 18px;
             weight: 700;
         }
     }
 
-    &>.program-card-more {
+    & > .program-card-more {
         width: 100%;
         max-width: 90px;
         height: 100%;
         max-height: 77px;
-        padding: 28px 0 37.31px;
         font-size: 35px;
-        color: white;
         background-color: #0066C5;
         @extend %display-flex;
         flex: 1 1 auto;
         align-items: center;
         box-sizing: border-box;
+
+        & > a {
+            @extend %display-flex;
+            width: 100%;
+            height: 100%;
+            padding: 28px 0 37.31px;
+            text-decoration: none;
+
+            &>i {
+                color: white;
+            }
+        }
     }
 }
 
@@ -621,16 +571,19 @@ main {
 
 .benefits {
     margin: 111px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
 
-    &>.benefits-title {
+    & > .benefits-title {
         @extend %section-title;
 
     }
 
-    &>.benefits-cards {
+    & > .benefits-cards {
         @extend %display-flex;
 
-        &>.benefits-card {
+        & > .benefits-card {
             flex: 1 1 auto;
             @extend %display-flex;
             justify-content: flex-start;
@@ -638,11 +591,11 @@ main {
             border-right: 3px solid #F2F6F9;
             height: 178px;
 
-            &>img {
+            & >  img {
                 margin-bottom: 16px;
             }
 
-            &>.benefits-card-text {
+            & > .benefits-card-text {
                 max-width: 246px;
                 text-align: center;
                 font-weight: 400;
@@ -650,7 +603,6 @@ main {
 
 
             @for $i from 1 through 4 {
-
                 @each $width,
                 $height in (128.17px, 80px),
                 (138.62px, 110.33px),
@@ -662,42 +614,63 @@ main {
                     }
                 }
             }
-
         }
 
-        &>.benefits-card:last-child {
+        & > .benefits-card:last-child {
             border-right: none;
         }
     }
 }
 
 .intensive-programs {
-    // margin-bottom: 140px;
+    @extend %display-flex;
+    align-items: flex-start;
+    padding: 0 30px;
 
-    &>img {
-        width: auto;
-        // height: 100%;
-        height: 100%;
-        max-height: 647px;
-        float: left;
+    @media (max-width: 991px) {
+            margin-left: 170px;
     }
 
-    &>.intensive-programs-info {
+    & > div:last-child {
+        max-width: 1109px;
+        position: relative;
+
+        &:before {
+            width: 100px;
+            max-width: 100px;
+            height: 432px;
+            display: block;
+            content: '';
+            background: url('/images/section_intensive_programs/Union_dot.png') no-repeat;
+            position: absolute;
+            top: 38%;
+            left: 0;
+        }
+    }
+
+    & > img {
+        width: 100%;
+        max-width: 258px;
+        flex: 0 2 auto;
+    }
+
+    & > .intensive-programs-info {
+        flex: 1 1 auto;
         width: 100%;
         max-width: 519px;
         margin: 0 58.5px 0 89px;
-        float: left;
+        padding: 0 30px;
 
-        &>.intensive-programs-info-text {
+        & > .intensive-programs-info-text {
             margin-bottom: 40px;
         }
 
-        &>.intensive-programs-info-title {
+        & > .intensive-programs-info-title {
             @extend %section-title;
             margin-bottom: 40px;
         }
 
-        &>.intensive-programs-info-btn {
+        & > .intensive-programs-info-btn {
             width: 100%;
             max-width: 218px;
             @extend %button-style;
@@ -705,7 +678,7 @@ main {
             background: #0066C5;
             border-radius: 10px;
             color: #FFFFFF;
-            border: 1px solid transparent;
+            border: 3px solid transparent;
             transition: all .2s linear;
             -webkit-transition: all .2s linear;
             -moz-transition: all .2s linear;
@@ -728,13 +701,13 @@ footer {
     margin-top: 140px;
     background-color: black;
 
-    &>.footer-title {
+    & > .footer-title {
         margin: 18px 0 17px;
         font-weight: 700;
         color: white;
     }
 
-    &>.social {
+    & > .social {
         @extend %display-flex;
         align-items: center;
         margin-bottom: 25px;
@@ -750,7 +723,7 @@ footer {
             margin-right: 28px;
             cursor: pointer;
 
-            &:first-child {
+            &:hover {
                 color: #27C5DC;
             }
 
@@ -758,19 +731,6 @@ footer {
                 margin-right: 0;
             }
         }
-
-
-        // &>i {
-        //     width: 42px;
-        //     height: 42px;
-        //     border: 1px solid #27C5DC;
-        //     border-radius: 50%;
-        //     @extend %display-flex;
-        //     flex-direction: row;
-        //     margin-right: 28px;
-        //     background-color: #000000;
-        //     color: white;
-        // }
     }
 
     & > .copyright {
@@ -779,7 +739,3 @@ footer {
         font-size: 11px;
     }
 }
-
-// .add {
-//     height: 500px;
-// }

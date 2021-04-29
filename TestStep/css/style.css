@@ -151,7 +151,7 @@ header > .header-abstarct-2, header > .header-abstarct-1 {
   position: absolute;
 }
 
-footer > .social > a, footer > .social, footer, .benefits > .benefits-cards > .benefits-card, .benefits > .benefits-cards, .program-card-subtitle > .program-card-more, .program-card-subtitle > .program-card-text, .program > .program-cards > .program-card > .program-card-age, .suggest > .suggest-block, .sign-up, .intensive-programs > .intensive-programs-info > .intensive-programs-info-btn, .sign-up > .sign-up-btn {
+footer > .social > a, footer > .social, footer, .intensive-programs, .benefits > .benefits-cards > .benefits-card, .benefits > .benefits-cards, .program-card-subtitle > .program-card-more > a, .program-card-subtitle > .program-card-more, .program-card-subtitle > .program-card-text, .program > .program-cards > .program-card > .program-card-age, .suggest > .suggest-block, .sign-up, .intensive-programs > .intensive-programs-info > .intensive-programs-info-btn, .sign-up > .sign-up-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,7 +402,7 @@ header > .header-abstarct-2 {
 }
 .header-nav-wrapper > nav {
   height: 100%;
-  margin-right: 144px;
+  margin-right: 9rem;
 }
 .header-nav-wrapper > .header-nav-add {
   display: -webkit-box;
@@ -476,7 +476,7 @@ header > .header-abstarct-2 {
   height: 635px;
   background: url("/images/header_contact/Rectangle_133.jpg") center no-repeat;
   background-size: cover;
-  padding-top: 91px;
+  padding: 91px 30px 30px;
 }
 
 main {
@@ -566,7 +566,6 @@ main > .suggest-shards-3 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 140px;
-  z-index: 2;
 }
 .sign-up > .sign-up-text {
   max-width: 847px;
@@ -580,7 +579,19 @@ main > .suggest-shards-3 {
   max-width: 1440px;
   margin-top: 141px;
   margin-bottom: 152px;
-  z-index: 2;
+}
+.suggest > .suggest-title {
+  padding: 0 30px;
+}
+.suggest > .suggest-block {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 30px;
 }
 .suggest > .suggest-block > div {
   margin-right: 20px;
@@ -602,12 +613,20 @@ main > .suggest-shards-3 {
   margin-top: 20px;
 }
 
+.program {
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 .program > .program-cards {
   width: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
 }
 .program > .program-cards > .program-card {
-  float: left;
-  margin: 0 20px 20px 0;
   width: 100%;
   max-width: 710px;
   position: relative;
@@ -653,7 +672,6 @@ main > .suggest-shards-3 {
   -webkit-box-flex: 2;
       -ms-flex: 2 1 auto;
           flex: 2 1 auto;
-  padding: 28px 0 37.31px;
   background-color: #F2F6F9;
   font-size: 18px;
   font-weight: 700;
@@ -663,9 +681,7 @@ main > .suggest-shards-3 {
   max-width: 90px;
   height: 100%;
   max-height: 77px;
-  padding: 28px 0 37.31px;
   font-size: 35px;
-  color: white;
   background-color: #0066C5;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -676,9 +692,26 @@ main > .suggest-shards-3 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.program-card-subtitle > .program-card-more > a {
+  width: 100%;
+  height: 100%;
+  padding: 28px 0 37.31px;
+  text-decoration: none;
+}
+.program-card-subtitle > .program-card-more > a > i {
+  color: white;
+}
 
 .benefits {
   margin: 111px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 30px;
 }
 .benefits > .benefits-cards > .benefits-card {
   -webkit-box-flex: 1;
@@ -770,17 +803,47 @@ main > .suggest-shards-3 {
   border-right: none;
 }
 
+.intensive-programs {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 30px;
+}
+@media (max-width: 991px) {
+  .intensive-programs {
+    margin-left: 170px;
+  }
+}
+.intensive-programs > div:last-child {
+  max-width: 1109px;
+  position: relative;
+}
+.intensive-programs > div:last-child:before {
+  width: 100px;
+  max-width: 100px;
+  height: 432px;
+  display: block;
+  content: "";
+  background: url("/images/section_intensive_programs/Union_dot.png") no-repeat;
+  position: absolute;
+  top: 38%;
+  left: 0;
+}
 .intensive-programs > img {
-  width: auto;
-  height: 100%;
-  max-height: 647px;
-  float: left;
+  width: 100%;
+  max-width: 258px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 2 auto;
+          flex: 0 2 auto;
 }
 .intensive-programs > .intensive-programs-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   width: 100%;
   max-width: 519px;
   margin: 0 58.5px 0 89px;
-  float: left;
+  padding: 0 30px;
 }
 .intensive-programs > .intensive-programs-info > .intensive-programs-info-text {
   margin-bottom: 40px;
@@ -795,7 +858,7 @@ main > .suggest-shards-3 {
   background: #0066C5;
   border-radius: 10px;
   color: #FFFFFF;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -837,7 +900,7 @@ footer > .social > a {
   margin-right: 28px;
   cursor: pointer;
 }
-footer > .social > a:first-child {
+footer > .social > a:hover {
   color: #27C5DC;
 }
 footer > .social > a:last-child {
