@@ -16,6 +16,7 @@
 
 %abstarct-image {
     position: absolute;
+    z-index: -1;
 }
 
 %display-flex {
@@ -178,7 +179,7 @@ header {
             max-width: 465px;
             display: flex;
             justify-content: flex-end;
-            color: var(--header-lang);
+            // color: var(--header-lang);
             font: {
                 family: 'SF UI Display', Arial, sans-serif;
                 size: 15px;
@@ -188,6 +189,17 @@ header {
             & > .header-contact-lang-item {
                 margin-right: 13px;
                 cursor: pointer;
+                color: var(--header-lang);
+
+                &.active {
+                    color: black;
+                }
+
+                &:hover {
+                    border-bottom: 3px solid #27C5DC;
+                    padding-bottom: 8px;
+                    color: black;
+                }
             }
 
             & > .header-contact-lang-item.active {
@@ -550,6 +562,7 @@ main {
         flex: 1 1 auto;
         align-items: center;
         box-sizing: border-box;
+        
 
         & > a {
             @extend %display-flex;
@@ -558,7 +571,7 @@ main {
             padding: 28px 0 37.31px;
             text-decoration: none;
 
-            &>i {
+            & > i {
                 color: white;
             }
         }

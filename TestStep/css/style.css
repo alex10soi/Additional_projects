@@ -149,6 +149,7 @@ table {
 
 header > .header-abstarct-2, header > .header-abstarct-1 {
   position: absolute;
+  z-index: -1;
 }
 
 footer > .social > a, footer > .social, footer, .intensive-programs, .benefits > .benefits-cards > .benefits-card, .benefits > .benefits-cards, .program-card-subtitle > .program-card-more > a, .program-card-subtitle > .program-card-more, .program-card-subtitle > .program-card-text, .program > .program-cards > .program-card > .program-card-age, .suggest > .suggest-block, .sign-up, .intensive-programs > .intensive-programs-info > .intensive-programs-info-btn, .sign-up > .sign-up-btn {
@@ -315,7 +316,6 @@ header > .header-abstarct-2 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  color: var(--header-lang);
   font-family: "SF UI Display", Arial, sans-serif;
   font-size: 15px;
   margin-top: 11px;
@@ -323,6 +323,15 @@ header > .header-abstarct-2 {
 .header-contact > .header-contact-lang > .header-contact-lang-block > .header-contact-lang-item {
   margin-right: 13px;
   cursor: pointer;
+  color: var(--header-lang);
+}
+.header-contact > .header-contact-lang > .header-contact-lang-block > .header-contact-lang-item.active {
+  color: black;
+}
+.header-contact > .header-contact-lang > .header-contact-lang-block > .header-contact-lang-item:hover {
+  border-bottom: 3px solid #27C5DC;
+  padding-bottom: 8px;
+  color: black;
 }
 .header-contact > .header-contact-lang > .header-contact-lang-block > .header-contact-lang-item.active {
   border-bottom: 3px solid #27C5DC;
