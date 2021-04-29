@@ -816,7 +816,6 @@ main > .suggest-shards-3 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 30px;
 }
 @media (max-width: 991px) {
   .intensive-programs {

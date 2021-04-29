@@ -638,7 +638,6 @@ main {
 .intensive-programs {
     @extend %display-flex;
     align-items: flex-start;
-    padding: 0 30px;
 
     @media (max-width: 991px) {
             margin-left: 170px;
